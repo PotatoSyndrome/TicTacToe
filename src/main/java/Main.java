@@ -4,5 +4,6 @@ public class Main {
         TicTacToe ticTacToe = new TicTacToe();
         ticTacToe.print();
         ticTacToe.StartGame();
+        System.out.println("Game have Ended");
     }
 }
