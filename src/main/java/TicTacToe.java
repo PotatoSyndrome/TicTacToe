@@ -30,7 +30,7 @@ public class TicTacToe {
         return field;
     }
 
-    public void StartGame(){
+    public void startGame(){
         Scanner in = new Scanner(System.in);
         while (!isGameEnded()){
             System.out.println("Enter your coordinates: ");

@@ -6,14 +6,14 @@ public class TicTacToeTest {
 
 
     @Test
-    public void OneTurnTest(){
+    public void oneTurnTest(){
         TicTacToe tested = new TicTacToe();
         tested.turn(1,1);
-        assertTrue(1 == tested.getField()[0][0]);
+        assertEquals(1, tested.getField()[0][0]);
     }
 
     @Test
-    public void TwoTurnsTest(){
+    public void twoTurnsTest(){
         TicTacToe tested = new TicTacToe();
         tested.turn(1,1);
         tested.turn(1,2);
@@ -22,7 +22,7 @@ public class TicTacToeTest {
     }
 
     @Test
-    public void SameTurnMustSkip(){
+    public void sameTurnMustSkip(){
         TicTacToe tested = new TicTacToe();
         tested.turn(1,1);
         tested.turn(1,1);
@@ -30,7 +30,7 @@ public class TicTacToeTest {
     }
 
     @Test
-    public void EndOfTheGameHorizontalTest(){
+    public void endOfTheGameHorizontalTest(){
         TicTacToe tested = new TicTacToe();
         tested.turn(1,1);
         tested.turn(2,1);
@@ -41,7 +41,7 @@ public class TicTacToeTest {
     }
 
     @Test
-    public void EndOfTheGameVerticalTest()
+    public void endOfTheGameVerticalTest()
     {
         TicTacToe tested = new TicTacToe();
         tested.turn(1,1);
@@ -53,7 +53,7 @@ public class TicTacToeTest {
     }
 
     @Test
-    public void EndOfTheGameDiagonalTest1(){
+    public void endOfTheGameDiagonalTest1(){
         TicTacToe tested = new TicTacToe();
         tested.turn(1,1);
         tested.turn(1,2);
@@ -64,7 +64,7 @@ public class TicTacToeTest {
     }
 
     @Test
-    public void EndOfTheGameDiagonalTest2(){
+    public void endOfTheGameDiagonalTest2(){
         TicTacToe tested = new TicTacToe();
         tested.turn(3,1);
         tested.turn(1,2);
